@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">s205333 Lykkehjulet</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="spin">Spin</string>
+    <string name="result">Result</string>
+    <string name="a">a</string>
+    <string name="enter">Enter</string>
+    <string name="guess_a_word">Guess a word</string>
+    <string name="bankrputmsg">OOPs, You lose all your points</string>
+    <string name="lostturn">Oops, Looks like you lost a turn</string>
+    <string name="addextralife">Bravo!!you get a extra turn</string>
+    <string name="addpoints">"Guess a word "</string>
+    <string name="_0">0</string>
+    <string name="guess_the_word">Guess the word</string>
+    <string name="submit">Submit</string>
+    <string name="enter_a_letter_example_a">Enter a letter example : a</string>
+    <string name="play_again">Play Again</string>
+    <string name="cancel">Cancel</string>
+    <string name="vowel">Vowel</string>
+    <string name="solve">Solve</string>
+</resources>

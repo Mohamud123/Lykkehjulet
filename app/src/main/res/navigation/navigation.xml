@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/home2">
+
+    <fragment
+        android:id="@+id/home2"
+        android:name="com.wheel.fortune.ui.fortune.fragment.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home2_to_game"
+            app:destination="@id/game" />
+        <argument
+            android:name="guessword"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="Fortune" />
+    </fragment>
+    <fragment
+        android:id="@+id/game"
+        android:name="com.wheel.fortune.ui.fortune.fragment.Game"
+        android:label="fragment_game"
+        tools:layout="@layout/fragment_game" >
+        <action
+            android:id="@+id/action_game_to_gameResult"
+            app:destination="@id/gameResult" />
+        <argument
+            android:name="word"
+            app:argType="string"
+            android:defaultValue="Fortune" />
+        <argument
+            android:name="hint"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="Fortune" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/gameResult"
+        android:name="com.wheel.fortune.ui.fortune.fragment.GameResult"
+        android:label="fragment_game_result"
+        tools:layout="@layout/fragment_game_result"
+        >
+
+        <argument
+            android:name="result"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="lost" />
+    </fragment>
+</navigation>
